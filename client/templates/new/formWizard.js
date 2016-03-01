@@ -49,6 +49,7 @@ Template.formWizard.rendered = function(){
                 $(this).steps("previous");
             }
         },
+
         onFinishing: function (event, currentIndex)
         {
             var form = $(this);
@@ -60,6 +61,7 @@ Template.formWizard.rendered = function(){
             // Start validation; Prevent form submission if false
             return form.valid();
         },
+        
         onFinished: function (event, currentIndex)
         {
             var form = $(this);
@@ -104,4 +106,22 @@ Template.formWizard.rendered = function(){
         }
     });
 
+   $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
+
+      var $target = $( event.currentTarget );
+
+      $target.closest( '.btn-group' )
+         .find( '[data-bind="label"]' ).text( $target.text() )
+            .end()
+         .children( '.dropdown-toggle' ).dropdown( 'toggle' );
+
+      return false;
+
+   });
+
+    $('.datetimepicker').each(function(){
+           $(this).datetimepicker(); 
+    });
+
 };
+
