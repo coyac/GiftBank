@@ -38,7 +38,7 @@
                         <div>
                             <h4>Nome Porquinho</h4>
                             <small>
-                                Isto é a descrição do Porquinho: 
+                                Isto é a descrição do Porquinho:
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority
                                 have suffered alteration in some form Ipsum available There are many variations of passages of Lorem Ipsum available, but the majority.</p>
                             </small>
@@ -102,15 +102,15 @@
                                     <dl class="dl-horizontal">
                                         <br> <br>
                                     <dt>Percentagem:</dt>
-                                    <dd>
+                                    {{#if ownPost}}<dd>
                                         <div class="progress progress-striped active m-b-sm">
                                             <div style="width: 60%;" class="progress-bar"></div>
                                         </div>
-                                        <small>Participe neste Porquinho para fazer aumentar a percentagem.</small>
-                                    </dd>
+                                        {{#if ownPost}}<small>Participe neste Porquinho para fazer aumentar a percentagem.</small>{{/if}}
+                                    </dd>{{/if}}
 
                                     <br>
-
+                                    {{author}}
                                     <div class="text-center m-t-md">
                                         <a href="#" class="btn btn-xs btn-primary">Convidar mais participantes</a>
                                     </div>
@@ -311,7 +311,7 @@
                 </div>
 
 <!-- -->
-                    </div>                
+                    </div>
                 </div>
             </div>
         </div>
