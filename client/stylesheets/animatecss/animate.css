@@ -2850,13 +2850,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     text-align: left;
 }
 
-.btn-input .btn.form-control span:first-child {
-   left: 10px;
-   overflow: hidden;
-   position: absolute;
-   right: 25px;
-}
-
 .btn-input .btn.form-control .caret {
    margin-top: -1px;
    position: absolute;
