@@ -1,6 +1,6 @@
 Template.formWizard.rendered = function(){
 
-    // Initialize steps plugin
+    // Initialize steps plugin bbb 
     $("#wizard").steps();
 
     $("#form").steps({
@@ -61,7 +61,7 @@ Template.formWizard.rendered = function(){
             // Start validation; Prevent form submission if false
             return form.valid();
         },
-        
+
         onFinished: function (event, currentIndex)
         {
             var form = $(this);
@@ -120,8 +120,7 @@ Template.formWizard.rendered = function(){
    });
 
     $('.datetimepicker').each(function(){
-           $(this).datetimepicker(); 
+           $(this).datetimepicker();
     });
 
 };
-
