@@ -24,12 +24,12 @@
                         <form id="form" action="#" class="wizard-big">
                             <h1>Criar</h1>
                             <fieldset>
-                                <h2>Criar Porkinhos </h2>
+                                <h2>Criar Porkinhos</h2>
                                 <div class="row">
                                     <div class="col-lg-8">
                                         <div class="form-group">
                                             <label>Escolha o tipo de evento</label>
-                                            <div class="panel panel-default">
+                                            <div id="dropdown1" class="panel panel-default">
                                                 <div class="panel-body">
                                                <div class="btn-group btn-input clearfix">
                                                  <button type="button" id="EventType" name="EventType" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
@@ -42,20 +42,22 @@
                                                 <option value = "Anniversário"> Volvo </option>
                                                </select>
                                                 -->
-                                                   <li><a> Anniversário</a></li>
-                                                   <li><a> Solidariedade</a></li>
-                                                   <li><a> Projectos</a></li>
-                                                   <li><a> Festas</a></li>
-                                                   <li><a> Presentes</a></li>
-                                                   <li><a> Outros</a></li>
+
+                                                   <li name="ani" value="300"><a> Aniversário</a></li>
+                                                   <li name="soli" value="20"><a> Solidariedade</a></li>
+                                                   <li name="projectos" value="1"><a> Projectos</a></li>
+                                                   <li value="1"><a> Festas</a></li>
+                                                   <li value="2"><a> Presentes</a></li>
+                                                   <li value="3"><a> Outros</a></li>
+
                                                  </ul>
                                                 </div>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="form-group">
-                                            <label>Nome do Porkinho*</label>
+                                        <div class="form-group" name ="formnome">
+                                            <label>Nome do Porkinho *</label>
                                             <input id="NomePork" name="NomePork" type="text" class="form-control required"  placeholder="Presente para o aniversário da Claudinha">
                                         </div>
                                         <div class="form-group">
@@ -64,13 +66,13 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label>Adicione a data*</label>
+                                            <label>Adicione a data *</label>
                                             <input id="FinalDate" name="FinalDate" type="text" class="form-control required">
                                         </div>
 
 
                                         <div class="form-group">
-                                          <label for="myInput">Adicione a data de fim*</label>
+                                          <label for="myInput">Adicione a data de fim *</label>
                                           <div class="input-group datetimepicker">
                                              <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                                              <input name="FinalDate" id="FinalDate" class="set-due-date form-control" type="text"/>

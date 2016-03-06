@@ -1,6 +1,6 @@
 Template.formWizard.rendered = function(){
 
-    // Initialize steps plugin bbb 
+    // Initialize steps plugin bbb
     $("#wizard").steps();
 
     $("#form").steps({
@@ -79,6 +79,14 @@ Template.formWizard.rendered = function(){
               SuggestedValue: $(event.target).find('[name=SuggestedValue]').val(),
               PaymentType: $(event.target).find('[name=PaymentType]').val()
             };
+
+            //document.write("This is my first JavaScript!");
+
+            //document.write( $(event.target).find('[name=NomePork]').val());
+            //document.write( $(event.target).find('[name=EventType]').val());
+            //document.write($("#evento option:selected").text());
+            //document.write( $(event.target).find('[name=solidariedade]').val());
+            //document.write( $(event.target).find('[name=projectos]').val());
 
             Meteor.call('postInsert', post, function(error, result) {
               // display the error to the user and abort
