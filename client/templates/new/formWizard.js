@@ -88,7 +88,7 @@ Template.formWizard.rendered = function(){
             //document.write( $(event.target).find('[name=solidariedade]').val());
 
             //TESTE
-            //document.write( $(event.target).find('[name=options]').val());
+            document.write( $(event.target).find('[name=options]').val());
 
             Meteor.call('postInsert', post, function(error, result) {
               // display the error to the user and abort
