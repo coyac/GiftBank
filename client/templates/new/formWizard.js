@@ -89,7 +89,9 @@ Template.formWizard.rendered = function(){
 
             //TESTE
             //document.write( $(event.target).find('[name=EventType]').val());
-            Meteor.call('sendEmail', "camillecoyac@gmail.com", "porkinhos@porkinhos.com")
+
+            //Enviar email
+            //Meteor.call('sendEmail', "camillecoyac@gmail.com", "porkinhos@porkinhos.com")
             Meteor.call('postInsert', post, function(error, result) {
               // display the error to the user and abort
               if (error)
