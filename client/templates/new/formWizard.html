@@ -30,7 +30,7 @@
                                         <div class="form-group">
                                             <label>Escolha o tipo de evento</label>
 
-                                              <select class="select2_demo_1 form-control" id="EventType" name="EventType">
+                                              <select class="select2_demo_1 form-control" type="text" id="EventType" name="EventType">
                                                 <option value="Anniversário">Anniversário</option>
                                                 <option value="Solidariedade">Solidariedade</option>
                                                 <option value="Projectos">Projectos</option>
@@ -51,12 +51,6 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label>Adicione a data *</label>
-                                            <input id="FinalDate" name="FinalDate" type="text" class="form-control required">
-                                        </div>
-
-
-                                        <div class="form-group">
                                           <label for="myInput">Adicione a data de fim *</label>
                                           <div class="input-group datetimepicker">
                                              <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
@@ -64,6 +58,12 @@
                                            </div>
                                         </div>
 
+                                        <div class="form-group" id="data_1">
+                                            <label class="font-noraml">Simple data input format</label>
+                                            <div class="input-group date">
+                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="03/04/2014">
+                                            </div>
+                                        </div>
 
                                     </div>
                                     <div class="col-lg-4">
@@ -97,7 +97,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Sugerir montante por participante</label>
-                                            <input id="SuggestedValue" name="SuggestedValue" type="text" class="form-control required" placeholder="10R$">
+                                            <input id="SuggestedValue" name="SuggestedValue" type="text" class="form-control" placeholder="10R$">
                                         </div>
                                     </div>
                                 </div>
