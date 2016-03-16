@@ -57,14 +57,28 @@
                                              <input name="FinalDate" id="FinalDate" class="set-due-date form-control" type="text"/>
                                            </div>
                                         </div>
-
-                                        <div class="form-group" id="data_1">
-                                            <label class="font-noraml">Simple data input format</label>
-                                            <div class="input-group date">
-                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="03/04/2014">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="ibox float-e-margins">
+                                                    <label>Insira uma imagem para o seu Porquinho</label>
+                                                    <div class="ibox-content">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <h4>Preview image</h4>
+                                                                <div class="img-preview img-preview-sm"></div>
+                                                                <div class="btn-group">
+                                                                    <label title="Upload image file" for="inputImage" class="btn btn-primary">
+                                                                        <input type="file" accept="image/*" name="file" id="inputImage" class="hide">
+                                                                        Upload new image
+                                                                    </label>
+                                                                    {{> dropzone1 }}
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="text-center">
@@ -135,5 +149,4 @@
 
         </div>
     </div>
-
 </template>

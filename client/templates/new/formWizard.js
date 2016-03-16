@@ -118,6 +118,34 @@ Template.formWizard.rendered = function(){
         }
     });
 
+    var $inputImage = $("#inputImage");
+    if (window.FileReader) {
+        $inputImage.change(function() {
+            var fileReader = new FileReader(),
+                files = this.files,
+                file;
+
+            if (!files.length) {
+              console.log("no");
+                return;
+            }
+
+            file = files[0];
+
+            if (/^image\/\w+$/.test(file.type)) {
+                fileReader.readAsDataURL(file);
+                fileReader.onload = function () {
+                    $inputImage.val("");
+                    console.log("bbb");
+                };
+            } else {
+                showMessage("Please choose an image file.");
+            }
+        });
+    } else {
+        $inputImage.addClass("hide");
+    }
+
    $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
 
       var $target = $( event.currentTarget );
@@ -130,9 +158,5 @@ Template.formWizard.rendered = function(){
       return false;
 
    });
-
-    $('.datetimepicker').each(function(){
-           $(this).datetimepicker();
-    });
 
 };

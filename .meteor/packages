@@ -49,3 +49,4 @@ tsega:bootstrap3-datetimepicker
 cfs:standard-packages
 cfs:gridfs
 gfk:mailgun-api
+raix:ui-dropped-event
