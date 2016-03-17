@@ -6,3 +6,13 @@ Template.projectDetail.helpers({
   return this.userId === Meteor.userId();
   }
 });
+
+Template.projectDetail.rendered = function(){
+
+    // Initialize i-check plugin
+    $('.i-checks').iCheck({
+        checkboxClass: 'icheckbox_square-green',
+        radioClass: 'iradio_square-green'
+    });
+};
+
